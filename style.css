@@ -322,3 +322,41 @@ body {
       display: flex;
     }
   }
+  .contact-section {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .contact-form button {
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #357ab7;
+  }
