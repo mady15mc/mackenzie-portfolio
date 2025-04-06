@@ -1,0 +1,324 @@
+body {
+    background-color: #1d8f70b1;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 40px;
+    color: #333;
+  }
+  
+  h1 {
+    color: #2a72d4;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  img {
+    border-radius: 10px;
+    width: 250px;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  ul {
+    list-style: square;
+    padding-left: 25px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  /* Center the card using Flexbox */
+.card-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  /* Style the card */
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .card h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Style the button with hover effect */
+  .card button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card button:hover {
+    background-color: #357ab7;
+  }
+  body {
+    background-color: #1d8f70b1;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    color: #e2824a;
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  img {
+    border-radius: 10px;
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+  }
+
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #444;
+  }
+  .navbar {
+    background-color: #4a90e2;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffeb3b;
+  }
+  /* Sticky navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #4a90e2;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Smooth scrolling behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Projects Section */
+#projects {
+    padding: 60px 20px;
+    background-color: #f0f4f8;
+    text-align: center;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+  }
+  
+  .project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .project-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .project-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-button:hover {
+    background-color: #357ab7;
+  }
+  .resume-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  .resume-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resume-button:hover {
+    background-color: #357ab7;
+  }
+  /* ------------- Responsive Styling ------------- */
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      padding-left: 0;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr; /* stack cards vertically */
+    }
+  
+    .card, .project-card {
+      width: 100%;
+    }
+  
+    h1, h2, h3 {
+      font-size: 1.5em;
+    }
+  
+    body {
+      padding: 0 10px;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .resume-button {
+      width: 100%;
+    }
+  }
+  /* Hamburger icon */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  /* Hide nav links by default on small screens */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 12px;
+      background-color: #4a90e2;
+      width: 100%;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  }

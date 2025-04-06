@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mackenzie's Styled Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <h1 class="logo">Mackenzie</h1>
+        
+        <!-- Hamburger icon (mobile only) -->
+        <div class="hamburger" onclick="toggleMenu()">
+          &#9776;
+        </div>
+      
+        <!-- Nav links -->
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#resume">Resume</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <h1 id="home">Welcome to My Styled Page</h1>
+
+  <div id="projects" class="cards-grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x180" alt="Card image 1">
+      <h2>Card One</h2>
+      <p>This is the first card with a description and a styled button.</p>
+      <button>Learn More</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x180" alt="Card image 2">
+      <h2>Card Two</h2>
+      <p>This is the second card with some cool text and another button.</p>
+      <button>Learn More</button>
+    </div>
+  </div>
+
+  <img src="Mackenzie.jpg" alt="Photo of me">
+
+  <section id="contact">
+    <h2>My Interests:</h2>
+    <ul>
+      <li>Coding</li>
+      <li>Music</li>
+      <li>Design</li>
+    </ul>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="https://via.placeholder.com/300x180" alt="Project Screenshot">
+            <h3>To-Do List App</h3>
+            <p>A simple to-do list app built using HTML, CSS, and JavaScript. You can add, delete, and check off tasks!</p>
+            <a href="#" class="project-button" target="_blank">View Project</a>
+          </div>
+      
+          <div class="project-card">
+            <img src="https://via.placeholder.com/300x180" alt="Project Screenshot">
+            <h3>Weather App</h3>
+            <p>A weather forecast app that pulls real-time data using a public API. Built with JS and styled with Flexbox.</p>
+            <a href="#" class="project-button" target="_blank">View Project</a>
+          </div>
+        </div>
+      </section>
+      <section id="resume" class="resume-section">
+        <h2>Download My Resume</h2>
+        <a href="Mackenzie-Resume.pdf" download class="resume-button">Download PDF</a>
+      </section>
+  </section>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
