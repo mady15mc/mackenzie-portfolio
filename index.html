@@ -109,5 +109,27 @@
 <script>
   AOS.init();
 </script>
+<script>
+  // Show the button when scrolled down
+  window.onscroll = function () {
+    const btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Scroll to top function
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">
+  ⬆️
+</button>
 </body>
 </html>
