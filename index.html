@@ -1,135 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
   <title>Mackenzie's Styled Page</title>
   <!-- AOS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header and Navigation -->
   <header>
     <nav class="navbar">
-        <h1 class="logo">Mackenzie</h1>
-        
-        <!-- Hamburger icon (mobile only) -->
-        <div class="hamburger" onclick="toggleMenu()">
-          &#9776;
-        </div>
-      
-        <!-- Nav links -->
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#resume">Resume</a></li>
-        </ul>
-      </nav>
+      <h1 class="logo">Mackenzie</h1>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+    </nav>
   </header>
+
+  <!-- Hero Section -->
   <h1 id="home" data-aos="fade-down">Welcome to My Styled Page</h1>
 
-  <div id="projects" class="cards-grid">
-    <div class="card">
-      <img src="https://via.placeholder.com/300x180" alt="Card image 1">
-      <h2>Card One</h2>
-      <p>This is the first card with a description and a styled button.</p>
-      <button>Learn More</button>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300x180" alt="Card image 2">
-      <h2>Card Two</h2>
-      <p>This is the second card with some cool text and another button.</p>
-      <button>Learn More</button>
-    </div>
-  </div>
-
-  <img src="Mackenzie.jpg" alt="Photo of me">
-
-  <section id="contact">
+  <!-- Interests Section -->
+  <section id="interests">
     <h2>My Interests:</h2>
     <ul>
       <li>Coding</li>
       <li>Music</li>
       <li>Design</li>
     </ul>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card" data-aos="zoom-in">
-            <img src="https://via.placeholder.com/300x180" alt="Project Screenshot">
-            <h3>To-Do List App</h3>
-            <p>A simple to-do list app built using HTML, CSS, and JavaScript. You can add, delete, and check off tasks!</p>
-            <a href="#" class="project-button" target="_blank">View Project</a>
-          </div>
-        
-          <div class="project-card" data-aos="zoom-in" data-aos-delay="150">
-            <img src="https://via.placeholder.com/300x180" alt="Project Screenshot">
-            <h3>Weather App</h3>
-            <p>A weather forecast app that pulls real-time data using a public API. Built with JS and styled with Flexbox.</p>
-            <a href="#" class="project-button" target="_blank">View Project</a>
-          </div>
-        </div>
-      </section>
-      <section id="resume" class="resume-section">
-        <h2>Download My Resume</h2>
-        <a href="Mackenzie-Resume.pdf" download class="resume-button" data-aos="fade-up">Download PDF</a>
-      </section>
-      <section id="contact" class="contact-section" data-aos="fade-up">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/mrbpopeg" method="POST" class="contact-form">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="_replyto" placeholder="Your Email" required>
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </section>
+    <img src="Mackenzie.jpg" alt="Photo of me">
   </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-aos="zoom-in">
+        <img src="images/todo-screenshot.png" alt="To-Do List Screenshot">
+        <h3>To-Do List App</h3>
+        <p>A simple task manager built with HTML, CSS, and JavaScript. Add, check, and delete tasks. Data is saved in localStorage.</p>
+        <a href=" https://mady15mc.github.io/todo-app/" class="project-button" target="_blank">Live Demo</a>
+      </div>
+
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="150">
+        <img src="https://via.placeholder.com/300x180" alt="Project Screenshot">
+        <h3>Weather App</h3>
+        <p>A weather forecast app that pulls real-time data using a public API. Built with JS and styled with Flexbox.</p>
+        <a href="#" class="project-button" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume-section">
+    <h2>Download My Resume</h2>
+    <a href="Mackenzie-Resume.pdf" download class="resume-button" data-aos="fade-up">Download PDF</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mrbpopeg" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">⬆️</button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© 2024 Mackenzie • Front-End Developer</p>
+    <div class="social-icons">
+      <a href="https://github.com/mady15mc" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/mackenziedongmo" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:queeny.mackenzie@yahoo.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Scroll Behavior Script -->
   <script>
     function toggleMenu() {
       const nav = document.getElementById("navLinks");
       nav.classList.toggle("show");
     }
-  </script>
-  <footer class="site-footer">
-    <p>© 2024 Mackenzie • Front-End Developer</p>
-    <div class="social-icons">
-      <a href="https://github.com/mady15mc" target="_blank" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://linkedin.com/in/Mackenzie Dongmo" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="mailto:queeny.mackenzie@yahoo.com" aria-label="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-    </div>
-  </footer>
-<!-- AOS JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script>
-  // Show the button when scrolled down
-  window.onscroll = function () {
-    const btn = document.getElementById("scrollTopBtn");
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  };
 
-  // Scroll to top function
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  }
-</script>
-<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">
-  ⬆️
-</button>
+    window.onscroll = function () {
+      const btn = document.getElementById("scrollTopBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
 </body>
 </html>
