@@ -385,3 +385,7 @@ body {
     transform: scale(1.2);
     color: #ffeb3b;
   }
+  
+  .social-icons i {
+    pointer-events: none;
+  }
