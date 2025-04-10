@@ -22,7 +22,7 @@
 <body>
   <!-- Header and Navigation -->
   <header>
-    <nav class="navbar">
+    <nav class="navbar"><button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
       <h1 class="logo">Mackenzie</h1>
       <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
       <ul class="nav-links" id="navLinks">
@@ -124,6 +124,12 @@
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
+  </script>
+  <script>
+    const toggle = document.getElementById("darkModeToggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
   </script>
 </body>
 </html>

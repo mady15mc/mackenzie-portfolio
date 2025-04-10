@@ -273,3 +273,43 @@ ul {
   background-color: #4338ca;
   transform: scale(1.1);
 }
+/* Toggle Button */
+#darkModeToggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  margin-left: auto;
+}
+
+body.dark {
+  background-color: #1a1a2e;
+  color: #f1f1f1;
+}
+
+body.dark .navbar,
+body.dark .site-footer,
+body.dark .resume-section,
+body.dark .contact-section,
+body.dark .project-card {
+  background-color: #2e2e48;
+  color: #f1f1f1;
+}
+
+body.dark a,
+body.dark .nav-links a {
+  color: #ffeb3b;
+}
+
+body.dark .project-button,
+body.dark .resume-button,
+body.dark .contact-form button {
+  background-color: #6c63ff;
+}
+
+body.dark .project-button:hover,
+body.dark .resume-button:hover,
+body.dark .contact-form button:hover {
+  background-color: #574b90;
+}
