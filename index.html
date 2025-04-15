@@ -73,15 +73,24 @@
   <!-- Projects Section -->
   <section id="projects">
     <h2>My Projects</h2>
+    
+    <!-- Filter Buttons -->
+    <div class="filter-buttons" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="js">JavaScript</button>
+      <button class="filter-btn" data-filter="api">API</button>
+      <button class="filter-btn" data-filter="ui">UI</button>
+    </div>
+  
     <div class="projects-grid">
-      <div class="project-card" data-aos="zoom-in">
+      <div class="project-card" data-aos="zoom-in" data-category="js ui">
         <img src="images/todo-screenshot.png" alt="To-Do List Screenshot">
         <h3>To-Do List App</h3>
         <p>A simple task manager built with HTML, CSS, and JavaScript. Add, check, and delete tasks. Data is saved in localStorage.</p>
         <a href="https://mady15mc.github.io/todo-app/" class="project-button" target="_blank">Live Demo</a>
       </div>
-
-      <div class="project-card" data-aos="zoom-in">
+  
+      <div class="project-card" data-aos="zoom-in" data-category="js api">
         <img src="images/weather-screenshot.png" alt="Weather App Screenshot">
         <h3>Weather Forecast App</h3>
         <p>This app shows current weather info for any city using OpenWeatherMap’s API. Built with HTML, CSS, and JavaScript.</p>
@@ -168,6 +177,28 @@
     backDelay: 1500,
     loop: true
   });
-</script>  
+</script>
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelector('.filter-btn.active').classList.remove('active');
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+
+      projectCards.forEach(card => {
+        const categories = card.getAttribute('data-category');
+        if (filter === 'all' || categories.includes(filter)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
